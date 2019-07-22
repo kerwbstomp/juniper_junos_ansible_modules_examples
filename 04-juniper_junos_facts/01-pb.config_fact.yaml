@@ -3,7 +3,7 @@
 # Facts can also fetch the committed config.
 #
 - name: 'Automatically registered facts'
-  hosts: r0
+  hosts: DOCKERSWITCH.CBADOPS.NET
   connection: local
   gather_facts: no
   roles:

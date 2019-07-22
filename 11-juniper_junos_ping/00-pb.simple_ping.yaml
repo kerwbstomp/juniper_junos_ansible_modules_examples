@@ -2,17 +2,17 @@
 #
 # Ping 10.0.1.2 with default parameters. Fails if any packets lost.
 #
-- name: 'Ping 10.0.1.2 with default parameters. Fails if any packets lost.'
-  hosts: r0
+- name: 'Ping 192.168.200.97 with default parameters. Fails if any packets lost.'
+  hosts: DOCKERSWITCH.CBADOPS.NET
   connection: local
   gather_facts: no
   roles:
     - Juniper.junos
 
   tasks:
-    - name: 'Ping 10.0.1.2 with default parameters. Fails if any packets lost.'
+    - name: 'Ping 192.168.200.97  with default parameters. Fails if any packets lost.'
       juniper_junos_ping:
-        dest: "10.0.1.2"
+        dest: "192.168.200.97"
       register: response
 
     - name: "Print the response"

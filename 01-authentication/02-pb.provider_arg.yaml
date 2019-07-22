@@ -4,7 +4,7 @@
 # insider a provider dictionary, like the core modules.
 #
 - name: 'Provider dict for connection arguments'
-  hosts: r0
+  hosts: DOCKERSWITCH.CBADOPS.NET
   connection: local
   gather_facts: no
   roles:
@@ -14,8 +14,8 @@
     - name: "Get facts"
       juniper_junos_facts:
         provider:
-          username: "user"
-          password: "user123"
+          username: "astronaut"
+          password: "n3wp@ss!"
 
     - name: "Print Junos Version"
       debug:

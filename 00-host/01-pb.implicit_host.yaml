@@ -4,7 +4,7 @@
 # host argument defaults to {{ inventory_hostname }}
 #
 - name: 'Implicit host argument'
-  hosts: r0
+  hosts: DOCKERSWITCH.CBADOPS.NET
   connection: local
   gather_facts: no
   roles:
@@ -13,8 +13,8 @@
   tasks:
     - name: "Get facts"
       juniper_junos_facts:
-        user: "user"
-        passwd: "user123"
+        user: "astronaut"
+        passwd: "n3wp@ss!"
 
     - name: "Print Junos Version"
       debug:

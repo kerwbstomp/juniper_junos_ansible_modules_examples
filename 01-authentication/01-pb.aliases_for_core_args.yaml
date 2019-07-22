@@ -3,7 +3,7 @@
 # Aliases for the arguments used by the core modules.
 #
 - name: 'Aliases for core argument names'
-  hosts: r0
+  hosts: DOCKERSWITCH.CBADOPS.NET
   connection: local
   gather_facts: no
   roles:
@@ -12,8 +12,8 @@
   tasks:
     - name: "Get facts"
       juniper_junos_facts:
-        username: "user"
-        password: "user123"
+        username: "astronaut"
+        password: "n3wp@ss!"
 
     - name: "Print Junos Version"
       debug:
