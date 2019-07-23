@@ -13,6 +13,7 @@
     - name: 'Ping host or IP with default parameters. Fails if any packets lost.'
       juniper_junos_ping:
         dest: "{{ destination_IP }}"
+        count: 20
       register: response
 
     - name: "Print the response"
