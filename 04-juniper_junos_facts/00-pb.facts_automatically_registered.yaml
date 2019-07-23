@@ -3,7 +3,7 @@
 # Facts are automatically registered under the junos key
 #
 - name: 'Automatically registered facts'
-  hosts: DOCKERSWITH.CBADOPS.NET
+  hosts: DOCKERSWITCH.CBADOPS.NET
   connection: local
   gather_facts: no
   roles:
