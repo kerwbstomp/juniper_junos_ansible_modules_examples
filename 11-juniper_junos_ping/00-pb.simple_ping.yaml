@@ -3,7 +3,7 @@
 # Ping host with default parameters. Fails if any packets lost.
 #
 - name: 'Ping host or IP with default parameters. Fails if any packets lost.'
-  hosts: {{ host_name }}
+  hosts: "{{ host_name }}"
   connection: local
   gather_facts: no
   roles:
@@ -12,7 +12,7 @@
   tasks:
     - name: 'Ping host or IP with default parameters. Fails if any packets lost.'
       juniper_junos_ping:
-        dest: {{ destination_IP}}
+        dest: "{{ destination_IP }}"
       register: response
 
     - name: "Print the response"
